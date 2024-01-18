@@ -1,1 +1,16 @@
 include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    sort_pub_dependencies: false
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+    invalid_annotation_target: ignore
+  exclude:
+    - test/generated/**
+    - lib/**.freezed.dart
+    - lib/**.g.dart
+    - lib/**.config.dart
